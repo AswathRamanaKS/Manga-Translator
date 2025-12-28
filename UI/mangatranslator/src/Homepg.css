@@ -1,0 +1,7 @@
+.UB{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: rgb(28, 29, 31);
+}

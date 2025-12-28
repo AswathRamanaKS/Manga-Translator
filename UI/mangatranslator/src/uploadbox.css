@@ -1,0 +1,81 @@
+.UBox {
+    all: unset;
+    cursor: pointer;
+    width: 40%;
+    height: 30%;
+    padding: 20px;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(50, 50, 53);
+}
+
+.UBox:hover{    
+    border-color: rgb(65, 64, 64);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.35);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+
+.Upload-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(30px);
+}
+
+.UPIA {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+
+    transform: translate(-50%, 0);
+    transition: transform 0.25s ease;   
+}
+
+.UPIB {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%); 
+    transition: transform 0.3s ease;
+}
+
+.UBox:hover .UPIA {
+    transform: translate(-50%, -25px);
+}
+
+.UBox:active .UPIA {
+    transform: translate(-50%, -200px);
+    transition: transform 0.15s ease-out;
+}
+
+
+
+.UBox h2 {
+    text-align: center;    
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #8d8989;
+}
+
+.UBox p {
+    text-align: center;     
+    font-size: 14px;
+    color: #666;
+}
