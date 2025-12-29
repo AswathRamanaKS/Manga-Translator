@@ -1,10 +1,16 @@
-import UploadBox from "./uploadbox"
 import './Homepg.css'
+import TopRibbon from './TopRibbon'
+import UploadBox from "./uploadbox"
+import Selectionboxes from "./Selectionboxes"
 function HomePg(){
     return(
-        <div className="UB">
-            <UploadBox/>
-        </div>
+        <>
+            <TopRibbon/>
+            <div className="UB">      
+                <Selectionboxes/>
+                <UploadBox/>
+            </div>        
+        </>
     )
 }
 export default HomePg;

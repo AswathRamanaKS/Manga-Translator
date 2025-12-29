@@ -1,7 +1,9 @@
 .UB{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;    
+    gap: 40px;
     background-color: rgb(28, 29, 31);
 }
